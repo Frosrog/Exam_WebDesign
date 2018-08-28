@@ -1,6 +1,6 @@
 export class MarketPrice {
 
-    values: [{
+    values: [{x:number;y:number
 
     }];
 

@@ -8,12 +8,15 @@ import { MarketPrice } from './Classes/market-price';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  result: any;
-  a = new MarketPrice()
-  constructor(private ShowMarketPrice: DataService ){
+  MarketPrice: any;
+  AvgBlockSize: any;
+  
+  constructor(private GetData: DataService ){
     
   }
   ngOnInit(){
-    this.ShowMarketPrice.getMarketPrice().subscribe(data => { this.result = data});
+    this.GetData.getMarketPrice().subscribe(data => { this.MarketPrice = data.values[33].y.toFixed(2)});
+    this.GetData.getAvgBlockSize().subscribe(data =>{ this.AvgBlockSize = data.values[33].y.toFixed(2)});
+    this.GetData.getAvgBlockSize().subscribe(data =>{ this.AvgBlockSize = data.values[33].y.toFixed(2)})
   }
   }
