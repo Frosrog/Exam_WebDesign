@@ -9,12 +9,11 @@ import { MarketPrice } from './Classes/market-price';
 })
 export class AppComponent implements OnInit{
   result: any;
-  price : any;
+  a = new MarketPrice()
   constructor(private ShowMarketPrice: DataService ){
-    this.ShowMarketPrice.getMarketPrice().subscribe(data => { this.result = data.values });
-    this.price = this.result.values;
     
-    ;
   }
-  ngOnInit(){}
+  ngOnInit(){
+    this.ShowMarketPrice.getMarketPrice().subscribe(data => { this.result = data});
+  }
   }

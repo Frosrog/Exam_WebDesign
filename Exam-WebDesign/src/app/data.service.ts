@@ -9,7 +9,7 @@ import { MarketPrice } from './Classes/market-price';
 export class DataService {
   result: any;
   constructor(private _http: HttpClient) {}
-  MARKET_PRICE= 'https://api.blockchain.info/charts/market-price?timespan=5weeks&rollingAverage=8hours&format=json'
+  MARKET_PRICE= 'https://api.blockchain.info/stats'
   getMarketPrice(){
     return this._http.get<MarketPrice>(this.MARKET_PRICE);
   }
