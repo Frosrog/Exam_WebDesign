@@ -1,3 +1,22 @@
-<div>Market Price = ${{MarketPrice}} USD</div>
-<div>Avg Block Size = {{AvgBlockSize}} MB</div>
-<div>Transactions per Day = {{NTransactions}} Transactions</div>
+<body>
+    <div class="block">
+        <h2>Market Price</h2>
+        <h3>${{MarketPrice}} USD</h3>
+        <h4>Precio medio de mercado en USD a través de intercambios importantes de bitcoin</h4>
+    </div>
+    <div class="block">
+        <h2>Avg Block Size</h2>
+        <h3>{{AvgBlockSize}} MB</h3>
+        <h4>El tamaño de bloque de 24 horas en MB</h4>
+    </div>
+    <div class="block">
+        <h2>Transactions per Day</h2>
+        <h3>{{NTransactions}} Transactions</h3>
+        <h4>El número total de transacciones Bitcoin Confirmados en las ultimas 24 horas</h4>
+    </div>
+    <div class="block">
+        <h2>Mempool Size</h2>
+        <h3>{{Mempool}} Bytes</h3>
+        <h4>El tamaño total de las operaciones de la espera de ser confirmada</h4>
+    </div>
+</body>
