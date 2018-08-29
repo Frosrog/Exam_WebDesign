@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { InfoComponent } from './dashboard/info/info.component';
 import { StatsComponent } from './stats-module/stats/stats.component';
 import { ExtractInfoComponent } from './graphics-module/extract-info/extract-info.component';
+import { NavbarComponent } from './dashboard/navbar/navbar.component';
+import { TableComponent } from './stats-module/table/table.component';
 
 
 
@@ -16,6 +18,8 @@ import { ExtractInfoComponent } from './graphics-module/extract-info/extract-inf
     InfoComponent,
     StatsComponent,
     ExtractInfoComponent,
+    NavbarComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
