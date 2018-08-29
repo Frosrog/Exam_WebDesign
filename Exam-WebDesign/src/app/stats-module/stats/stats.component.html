@@ -1,3 +1,42 @@
-<p>
-  stats works!
-</p>
+<body>
+<div class="bloque"><h2>
+  BLOCK SUMMARY
+</h2>
+<h4>Bloques Minados : {{BlocksMined}}</h4>
+<h4>Tiempo entre bloques : {{Minutes}} minutos</h4>
+<h4>Bitcoins minados : {{n_btc_mined}} BTC</h4>
+</div>
+
+<div class="bloque"><h2>
+    RESUMEN DEL MERCADO
+  </h2>
+  <h4>Precio del mercado : ${{market_price_usd}}</h4>
+  <h4>Volumen de intercambio : ${{VolumenUSD}}</h4>
+  <h4>Volumen de intercambio : {{minados.trade_volume_btc}} BTC</h4>
+  </div>
+  <div class="bloque">
+      <h2>
+          RESUMEN DEL MERCADO
+        </h2>
+        <h4>Comisiones Totales de Transacción: {{minados.total_fees_btc}} BTC</h4>
+        <h4>Numero de Transacciones : {{minados.n_tx}}</h4>
+        <h4>Volumen de Salida Total : {{minados.total_btc_sent}} BTC</h4>
+        <h4>Volumen de Transacciones Estimadas (BTC) : {{minados.totalbc}}</h4>
+        <h4>Volumen de Transacciones Estimadas (USD) : ${{estimated_transaction_volume_usd}}</h4>
+
+
+        </div>
+  <div class="bloque">
+      <h2>
+          COSTE DE LA MINERIA
+        </h2>
+        <h4>Beneficios Totales de los Mineros (USD) ${{miners_revenue_usd}}</h4>
+        <h2>
+            TASA DE HASH Y CONSUMO ENERGÉTICO
+          </h2>
+          <h4>Dificultad : {{minados.difficulty}}</h4>
+          <h4>Tasa de Hash : {{minados.hash_rate}}</h4>
+      
+        
+  </div>
+</body>
